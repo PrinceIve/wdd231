@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="My Course Home Page" />
+  <meta name="author" content="Prince Ive Eriabie" />
+  <title>My Course Home Page</title>
+
+  <link href="styles/small.css" rel="stylesheet" />
+  <link href="styles/larger.css" rel="stylesheet" />
+
+  <script src="scripts/navigation.js" defer></script>
+  
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
+  <header>
+    <img src="images/code.svg" alt="Site Logo" class="logo" width="800" height="800"/>
+    <span>Prince Ive Eriabie</span>
+    <button id="ham-btn" class='hamburger'></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li class="current"><a href="#">About</a></li>
+      <li><a href="#">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+    <div class="first-page">
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        My name is Prince Ive Eriabie. I'm from Delta State, Nigeria, and I've always believed that learning and curiosity can transform lives. I hold a degree in Industrial Mathematics and have also studied International Business Studies, blending analytical thinking with an understanding of people and opportunity. Today, I serve as an academic advisor at BYU Pathway Worldwide, where I help students find confidence and clarity in their own education journeys. Even though I'm still growing my skills in web development—working through FreeCodeCamp projects in HTML, CSS, and JavaScript—I've already had the chance to apply what I've learned by creating Excel dashboards and building accessible web pages.
+        <br>
+        <br>
+        Outside of work, I love reading, cooking, and exploring new ideas. I'm passionate about technology because it feels like a gateway to possibility, and I find real joy in helping others discover that same excitement. My family has always been a source of strength for me, especially after losing my parents at a young age, and their support inspires me to keep moving forward with resilience and faith. Whether I'm mentoring students, experimenting with new recipes, or building small web projects, I try to approach every day with curiosity, creativity, and the belief that small steps can lead to extraordinary growth.
+      </p>
+    </section>
+
+
+    <section class="photo">
+      <h2>Student Photo</h2>
+      <img src="images/prince.jpg" alt="Prince Ive Eriabie Photo" />
+    </section>
+
+    </div>
     
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="CSE">CSE</button>
+        <button data-filter="WDD">WDD</button>
+      </div>
+      <div id="courses-container">
+        <!-- Course cards will be injected here -->
+      </div>
+      <p id="credits-total">
+        The total credits for courses listed above is 6
+      </p>
+    </section>
+  </main>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/prince-eriabie" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://www.facebook.com/iveeriabie" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/PrinceIve" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://wa.me/2348163724130" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="16" height="16"></a>
+        </div>
+  <footer>
+    <p>
+      &copy; <span id="current-year"></span> • Prince Ive Eriabie, Lagos, Nigeria • 
+    </p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
