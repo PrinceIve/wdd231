@@ -1,16 +1,19 @@
-
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Typography & Body */
 body {
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   background-color: #f5f5f5;
   color: #222;
+  line-height: 1.5;
 }
 
-/* Header Layout */
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -19,41 +22,43 @@ header {
   padding: 0.75rem 1rem;
 }
 
-/* Logo */
 header img {
   width: 180px;
   height: auto;
 }
 
-/* Hamburger Button */
+/* Hamburger */
 .hamburger {
   background: none;
   border: none;
   cursor: pointer;
-  color: #000000;
+  color: #000;
+  font-size: 2rem;
 }
 
 .hamburger::after {
   content: "\2630";
-  font-size: 2rem;
 }
 
 .hamburger.show::after {
   content: "\00D7";
-  font-size: 2rem;
 }
 
+/* Navigation (mobile) */
 .navigation {
   display: none;
   width: 100%;
 }
+
 .navigation.show {
   display: block;
 }
+
 .navigation ul {
   list-style: none;
   background: #004080;
 }
+
 .navigation li a {
   display: block;
   padding: 0.75rem 1rem;
@@ -61,17 +66,18 @@ header img {
   text-decoration: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 .navigation li.current a {
   background-color: #f7da96;
   color: #000;
 }
+
 .navigation li a:hover {
   background-color: #FDB813;
   color: #000;
 }
 
-
-/* Hero Section */
+/* Hero */
 .hero {
   position: relative;
   margin: 1rem auto;
@@ -79,10 +85,12 @@ header img {
   border-radius: 6px;
   overflow: hidden;
 }
+
 .hero img {
   width: 100%;
   display: block;
 }
+
 .hero .cta-button {
   position: absolute;
   bottom: 1rem;
@@ -93,17 +101,14 @@ header img {
   border: none;
   border-radius: 4px;
   font-weight: 600;
+  transition: transform 0.2s ease;
 }
 
-  .hero .cta-button:hover {
-    background-color: #731963;
-    color: #ffffff;
-    transform: scale(1.05);
-  }
-   h1{
-    margin: 0 auto; 
-    max-width: 1200px; 
-  }
+.hero .cta-button:hover {
+  background-color: #731963;
+  color: #fff;
+  transform: scale(1.05);
+}
 
 /* Info Panels */
 .info-panels {
@@ -112,15 +117,17 @@ header img {
   gap: 1rem;
   margin: 1rem;
 }
+
 .panel {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e0e0e0;
   padding: 1rem;
   border-radius: 4px;
 }
+
 .panel h2 {
   background-color: #004080;
-  color: #ffffff;
+  color: #fff;
   padding: 0.5rem;
   border-radius: 4px;
   font-size: 1.1rem;
@@ -128,97 +135,19 @@ header img {
   margin-bottom: 0.5rem;
 }
 
-/* Container Layout */
-#members-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 1rem auto;      /* Centers container horizontally */
-  padding: 1rem;
-  max-width: 1200px;       /* Limits width nicely on large screens */
-}
-
-/* List View Override */
-#members-container.list-view {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Member Card */
-.member-card {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.member-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* List View Card */
-#members-container.list-view .member-card {
-  flex-direction: row;
-  text-align: left;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-/* Member Image */
-.member-card img {
-  width: 80px;
-  height: auto;
-  border-radius: 4px;
-  flex-shrink: 0;
-}
-
-/* Member Info Block */
-.member-card div {
-  flex: 1;
-}
-
-/* Headings */
-.member-card h3 {
-  margin: 0.3rem 0;
-  font-size: 1.2rem;
-  color: #004080;
-}
-
-/* Description */
-.member-card p {
-  margin: 0.2rem 0;
-  font-size: 0.95rem;
-  color: #333;
-}
-
-/* Website Link */
-.member-card a {
-  color: #004080;
-  text-decoration: underline;
-}
-.member-card a:hover {
-  color: #FDB813;
-}
-
-/* View Toggle Buttons */
+/* Members Directory */
 .view-toggle {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem auto;
-  max-width: 1200px;         
+  max-width: 1200px;
   padding: 0 1rem;
 }
 
 .view-toggle button {
   background: #004080;
-  color: #ffffff;
+  color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -226,11 +155,79 @@ header img {
   font-weight: 600;
   transition: background 0.3s ease;
 }
+
 .view-toggle button:hover {
   background: #FDB813;
   color: #000;
 }
 
+#members-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+#members-container.list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#members-container.list-view .member-card {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+}
+
+.member-card img {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.member-card div {
+  flex: 1;
+}
+
+.member-card h3 {
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+  color: #004080;
+}
+
+.member-card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.member-card a {
+  color: #004080;
+  text-decoration: underline;
+}
+
+.member-card a:hover {
+  color: #FDB813;
+}
 
 /* Footer */
 footer {
@@ -239,23 +236,27 @@ footer {
   gap: 1rem;
   padding: 2rem 1rem;
   background-color: #004080;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
+
 .footer-contact p,
 .footer-credits p {
   margin: 0.3rem 0;
 }
+
 .footer-contact a,
 .footer-credits a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: underline;
 }
+
 .footer-social {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
+
 .footer-social a {
   background-color: #070500;
   border-radius: 50%;
@@ -264,12 +265,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background 0.3s ease;
 }
+
 .footer-social img {
   width: 20px;
   height: 20px;
   filter: brightness(0) invert(1);
 }
+
 .footer-social a:hover {
   background-color: #481aee;
 }
