@@ -1,0 +1,341 @@
+@media only screen and (min-width: 38rem) {
+
+  /* Header layout */
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0 auto; 
+    max-width: 1200px; 
+    width: 90%;
+    color: #ffffff;
+  }
+
+  /* Hide the hamburger on large screens */
+  .hamburger {
+    display: none;
+  }
+
+ 
+  .navigation {
+    display: block;
+    width: auto;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    background: none;
+  }
+
+  .navigation li a {
+    color: #ffffff;
+    padding: 0.25rem 0;
+    border: none;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .navigation li.current a {
+    background-color: rgba(10, 24, 216, 0.726); 
+    color: #fdfdfd;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    transition: background 0.3s ease;
+  }
+
+
+  .navigation li a:hover,
+  .navigation li a:focus {
+   background-color: rgba(3, 7, 61, 0.2); 
+    color: #fdfdfd;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    transition: background 0.3s ease;
+  }
+
+  /* Hero Section */
+  .hero {
+    position: relative;
+    display: block;
+    margin: 2rem auto;
+    max-width: 1200px;
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero .cta-button {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #FDB813;
+    color: #000000;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .hero .cta-button:hover {
+    background-color: #731963;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+
+  h1{
+    margin: 0 auto; 
+    max-width: 1200px; 
+  }
+  /* Info Panels */
+  .info-panels {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    width: 90%;
+  }
+
+  .panel {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+  }
+
+  .panel:hover {
+    transform: translateY(-4px);
+  }
+
+  .panel h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    background-color: #004080;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+
+  .panel p {
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+ /* Container Layout */
+/* Container Layout */
+#members-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem auto;      /* Centers container horizontally */
+  padding: 1rem;
+  max-width: 1200px;       /* Limits width nicely on large screens */
+}
+
+/* List View Override */
+#members-container.list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Member Card */
+.member-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* List View Card */
+#members-container.list-view .member-card {
+  flex-direction: row;
+  text-align: left;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Member Image */
+.member-card img {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* Member Info Block */
+.member-card div {
+  flex: 1;
+}
+
+/* Headings */
+.member-card h3 {
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+  color: #004080;
+}
+
+/* Description */
+.member-card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Website Link */
+.member-card a {
+  color: #004080;
+  text-decoration: underline;
+}
+.member-card a:hover {
+  color: #FDB813;
+}
+
+/* View Toggle Buttons */
+.view-toggle {
+  display: flex;
+  justify-content: center;   /* Center buttons horizontally */
+  gap: 0.5rem;
+  margin: 1rem auto;
+  max-width: 1200px;         /* Aligns with the cards container */
+  padding: 0 1rem;
+}
+
+.view-toggle button {
+  background: #004080;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.view-toggle button:hover {
+  background: #FDB813;
+  color: #000;
+}
+
+
+
+  /* Business Spotlights */
+  .business-spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .business-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .business-card img {
+    flex-shrink: 0;
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .business-card-content {
+    flex: 1;
+  }
+
+  .business-card h3 {
+    margin: 0;
+    color: #004080;
+  }
+
+  .business-card p {
+    margin: 0.5rem 0;
+  }
+
+  /* Footer */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background-color: #004080;
+    color: #ffffff;
+  }
+
+  .footer-contact,
+  .footer-credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-contact p,
+  .footer-credits p {
+    margin: 0.3rem 0;
+  }
+
+  .footer-contact a,
+  .footer-credits a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-social a {
+    background-color: #070500;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+
+  .footer-social img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+  }
+
+  .footer-social a:hover,
+  .footer-social a:focus {
+    background-color: #481aee;
+  }
+}

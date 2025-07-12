@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Course Home Page" />
+    <meta name="author" content="Prince Ive Eriabie" />
+    <meta property="og:title" content="Directory - Prince Ive Eriabie">
+    <meta property="og:description" content="Directory of local businesses in the Lagos Chamber of Commerce">
+    <meta property="og:image" content="https://princeive.github.io/wdd231/chamber/images/commerce.jpg">
+    <meta property="og:url" content="https://princeive.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <title>Lagos Chamber of Commerce</title>
+
+      <!-- Normalize CSS -->
+    <link rel="stylesheet" href="/chamber/styles/normalize.css" />
+
+    <!-- Main CSS -->
+    <link href="styles/small.css" rel="stylesheet" />
+    <link href="styles/larger.css" rel="stylesheet" />
+    <link rel="icon" href="/chamber/images/favicon.ico" type="/chamber/images/favicon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/grid.js" defer></script>
+</head>
+<body>
+    
+ <header>
+  <img src="images/logo.svg" alt="Lagos Chamber of Commerce Logo" width="220" height="60">
+  <button id="ham-btn" class="hamburger"><span></span></button>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="current"><a href="#">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+   
+
+    <div class="hero">
+      <img src="/chamber/images/commerce.jpg" alt="Scalable, responsive hero image">
+      <button class="cta-button">Keynote Tickets</button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="info-panels">
+      <div class="panel events">
+        <h2>Events</h2>
+        <p>[Upcoming events content here]</p>
+      </div>
+      <div class="panel weather">
+        <h2>Current Weather</h2>
+        <p><strong>75°F</strong><br>Partly Cloudy<br>High: 85°<br>Low: 52°<br>Humidity: 34%<br>Sunrise: 7:30am<br>Sunset: 9:59pm</p>
+      </div>
+      <div class="panel forecast">
+        <h2>Weather Forecast</h2>
+        <p>Today: <strong>90°F</strong><br>Wednesday: <strong>89°F</strong><br>Thursday: <strong>68°F</strong></p>
+      </div>
+    </section>
+
+        <div class="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+        </div>
+        <div id="members-container">
+
+
+        </div>
+
+
+
+  </main>
+
+ <footer>
+  <div class="footer-contact">
+    <p><strong>Lagos Chamber of Commerce</strong></p>
+    <p>Plot 10, Alausa Business District, Ikeja, Lagos, Nigeria</p>
+    <p>Email: <a href="mailto:info@lagoschamber.ng">info@lagoschamber.ng</a></p>
+    <p>Phone: <a href="tel:+2348021234567">+234 802 123 4567</a></p>
+  </div>
+
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/prince-eriabie" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+    <a href="https://www.facebook.com/iveeriabie" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+    <a href="https://wa.me/2348163724130" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16" height="16"></a>
+  </div>
+
+  <div class="footer-credits">
+    <p>WDD231 Class Project</p>
+    <p>Prince Ive Eriabie, Lagos, Nigeria</p>
+    <p> &copy; <span id="current-year"></span> • Lagos Chamber of Commerce</p>
+    <p id="lastModified"></p>
+  </div>
+</footer>
+
+</body>
+</html>

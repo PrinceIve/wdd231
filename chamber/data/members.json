@@ -1,0 +1,67 @@
+{
+  "companies": [
+    {
+      "name": "Food Kage",
+      "address": "12 Broad Street, Lagos Island, Lagos, Nigeria",
+      "phone": "+234 801 111 2233",
+      "website": "https://lagostech.ng",
+      "image": "icons8-kawaii-sushi-48.png",
+      "membership": 3,
+      "description": "Anime meets Food."
+    },
+    {
+      "name": "Naija Bites",
+      "address": "45 Marina Road, Victoria Island, Lagos",
+      "phone": "+234 802 222 3344",
+      "website": "https://coastalfoods.ng",
+      "image": "icons8-naan-48.png",
+      "membership": 2,
+      "description": "Taste Naija."
+    },
+    {
+      "name": "Tech and Cooking",
+      "address": "88 Adeola Odeku, Victoria Island, Lagos",
+      "phone": "+234 803 333 4455",
+      "website": "https://wabank.ng",
+      "image": "icons8-kawaii-steak-48.png",
+      "membership": 3,
+      "description": "Regional financial services and banking."
+    },
+    {
+      "name": "Green Energy Nigeria",
+      "address": "77 Lekki Phase 1, Lagos",
+      "phone": "+234 804 444 5566",
+      "website": "https://greenenergy.ng",
+      "image": "icons8-green-energy-64.png",
+      "membership": 2,
+      "description": "Renewable energy and solar solutions."
+    },
+    {
+      "name": "Bright Future Schools",
+      "address": "3 Allen Avenue, Ikeja, Lagos",
+      "phone": "+234 805 555 6677",
+      "website": "https://brightfuture.ng",
+      "image": "icons8-bright-100.png",
+      "membership": 1,
+      "description": "Primary and secondary educational services."
+    },
+    {
+      "name": "Niger Delta Logistics",
+      "address": "23 Wharf Road, Apapa, Lagos",
+      "phone": "+234 806 666 7788",
+      "website": "https://ndlogistics.ng",
+      "image": "icons8-logistics-50.png",
+      "membership": 2,
+      "description": "Transportation and supply chain management."
+    },
+    {
+      "name": "HealthFirst Clinics",
+      "address": "10 Glover Road, Ikoyi, Lagos",
+      "phone": "+234 807 777 8899",
+      "website": "https://healthfirst.ng",
+      "image": "icons8-health-48.png",
+      "membership": 1,
+      "description": "Comprehensive health services and clinics."
+    }
+  ]
+}
