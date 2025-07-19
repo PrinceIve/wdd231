@@ -135,8 +135,10 @@ header img {
   text-align: center;
   margin-bottom: 0.5rem;
 }
+h1, h2{
+  text-align: center;
+}
 
-/* Members Directory */
 .view-toggle {
   display: flex;
   justify-content: center;
@@ -229,6 +231,129 @@ header img {
 .member-card a:hover {
   color: #FDB813;
 }
+
+/* ==== Info Panels Grid ==== */
+.info-panels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.info-panels ul li{
+    list-style: none;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.panel h2 {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px 4px 0 0;
+  font-size: 1.1rem;
+  margin: -1rem -1rem 1rem;
+}
+
+/* Events Panel */
+.events-panel ul {
+  padding-left: 1rem;
+}
+.events-panel li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+#spotlight-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+/* Spotlight Grid Container */
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+/* Individual Spotlight Cards */
+.spotlight-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Logo/Image */
+.spotlight-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Company Name */
+.spotlight-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #004080;
+}
+
+/* Tagline/Description */
+.spotlight-card .tagline {
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+/* Contact Info */
+.spotlight-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Website Link */
+.spotlight-card a {
+  color: #004080;
+  text-decoration: underline;
+  margin: 0.5rem 0;
+}
+
+.spotlight-card a:hover {
+  color: #FDB813;
+}
+
+/* Membership Badge */
+.spotlight-card .membership {
+  margin-top: auto;
+  font-weight: bold;
+  color: #731963;
+}
+
+
 
 /* Footer */
 footer {
