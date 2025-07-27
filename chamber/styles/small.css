@@ -1,4 +1,4 @@
-/* Reset */
+/* === Reset & Base Typography === */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* Typography & Body */
 body {
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   background-color: #f5f5f5;
@@ -14,13 +13,14 @@ body {
   line-height: 1.5;
 }
 
-/* Header */
+/* === Header === */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #a2c9f0;
   padding: 0.75rem 1rem;
+  width: 100%;
 }
 
 header img {
@@ -28,13 +28,13 @@ header img {
   height: auto;
 }
 
-/* Hamburger */
+/* === Hamburger Menu === */
 .hamburger {
   background: none;
   border: none;
   cursor: pointer;
-  color: #000;
   font-size: 2rem;
+  color: #000;
 }
 
 .hamburger::after {
@@ -45,7 +45,7 @@ header img {
   content: "\00D7";
 }
 
-/* Navigation (mobile) */
+/* === Navigation === */
 .navigation {
   display: none;
   width: 100%;
@@ -78,7 +78,7 @@ header img {
   color: #000;
 }
 
-/* Hero */
+/* === Hero === */
 .hero {
   position: relative;
   margin: 1rem auto;
@@ -111,7 +111,7 @@ header img {
   transform: scale(1.05);
 }
 
-/* Info Panels */
+/* === Info Panels === */
 .info-panels {
   display: grid;
   grid-template-columns: 1fr;
@@ -126,7 +126,8 @@ header img {
   border-radius: 4px;
 }
 
-.panel h2 {
+.panel h2,
+h1, h2 {
   background-color: #004080;
   color: #fff;
   padding: 0.5rem;
@@ -135,10 +136,8 @@ header img {
   text-align: center;
   margin-bottom: 0.5rem;
 }
-h1, h2{
-  text-align: center;
-}
 
+/* === View Toggle === */
 .view-toggle {
   display: flex;
   justify-content: center;
@@ -164,6 +163,7 @@ h1, h2{
   color: #000;
 }
 
+/* === Members Grid === */
 #members-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -202,7 +202,6 @@ h1, h2{
 
 .member-card img {
   width: 80px;
-  height: auto;
   border-radius: 4px;
   flex-shrink: 0;
 }
@@ -232,53 +231,18 @@ h1, h2{
   color: #FDB813;
 }
 
-/* ==== Info Panels Grid ==== */
-.info-panels {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 1rem;
-}
-
-.info-panels ul li{
-    list-style: none;
-}
-
-.panel {
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  padding: 1rem;
-}
-
-.panel h2 {
-  background: #333;
-  color: #fff;
-  padding: 0.5rem;
-  border-radius: 4px 4px 0 0;
-  font-size: 1.1rem;
-  margin: -1rem -1rem 1rem;
-}
-
-/* Events Panel */
+/* === Events Panel === */
 .events-panel ul {
   padding-left: 1rem;
 }
+
 .events-panel li {
   margin-bottom: 0.5rem;
   list-style: none;
 }
 
-#spotlight-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 1rem auto;
-  padding: 1rem;
-  max-width: 1200px;
-}
-
-/* Spotlight Grid Container */
+/* === Spotlight Grid === */
+#spotlight-container,
 .spotlight-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -288,16 +252,12 @@ h1, h2{
   max-width: 1200px;
 }
 
-/* Individual Spotlight Cards */
 .spotlight-card {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 1rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -307,63 +267,180 @@ h1, h2{
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Logo/Image */
 .spotlight-card img {
   width: 80px;
-  height: auto;
   margin-bottom: 0.5rem;
 }
 
-/* Company Name */
 .spotlight-card h3 {
-  margin: 0.5rem 0;
   font-size: 1.2rem;
   color: #004080;
 }
 
-/* Tagline/Description */
 .spotlight-card .tagline {
   font-style: italic;
-  margin-bottom: 0.75rem;
   color: #555;
 }
 
-/* Contact Info */
 .spotlight-card p {
-  margin: 0.3rem 0;
   font-size: 0.95rem;
   color: #333;
 }
 
-/* Website Link */
 .spotlight-card a {
   color: #004080;
   text-decoration: underline;
-  margin: 0.5rem 0;
 }
 
 .spotlight-card a:hover {
   color: #FDB813;
 }
 
-/* Membership Badge */
 .spotlight-card .membership {
-  margin-top: auto;
   font-weight: bold;
   color: #731963;
+  margin-top: auto;
 }
 
+/* === Application Form === */
+.application-form {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  max-width: 100%;
+}
 
+.application-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
 
-/* Footer */
-footer {
+.application-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.application-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.application-form input[type="text"],
+.application-form input[type="email"],
+.application-form input[type="tel"],
+.application-form select,
+.application-form textarea {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+.application-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.application-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.application-form input[type="submit"]:hover {
+  background-color: #ec4d1d;
+}
+
+@media (min-width: 500px) {
+  .application-form {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+/* === Modal & Dialog === */
+dialog {
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#close-modal {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* === Membership Cards with Entry Animation === */
+.membership-levels {
   display: grid;
-  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.6s ease-out forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.3s; }
+.card:nth-child(3) { animation-delay: 0.5s; }
+.card:nth-child(4) { animation-delay: 0.7s; }
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* === Footer === */
+footer {
+  width: 100%;
+  display: grid;
   gap: 1rem;
   padding: 2rem 1rem;
   background-color: #004080;
   color: #fff;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .footer-contact p,
@@ -375,6 +452,12 @@ footer {
 .footer-credits a {
   color: #fff;
   text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover,
+.footer-credits a:hover {
+  color: #cce4ff;
 }
 
 .footer-social {
@@ -394,12 +477,12 @@ footer {
   transition: background 0.3s ease;
 }
 
+.footer-social a:hover {
+  background-color: #481aee;
+}
+
 .footer-social img {
   width: 20px;
   height: 20px;
   filter: brightness(0) invert(1);
-}
-
-.footer-social a:hover {
-  background-color: #481aee;
 }

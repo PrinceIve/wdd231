@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+header {
+  background-color: #004080;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+main.thankyou-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.confirmation-message {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: blue;
+}
+
+.form-data-display {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #004080;
+  border-radius: 8px;
+  background-color: #eef6ff;
+}
+
+.form-data-display p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

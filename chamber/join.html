@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lagos Chamber of Commerce">
+  <meta name="author" content="Prince Ive Eriabie">
+  <meta property="og:title" content="Homepage - Prince Ive Eriabie">
+  <meta property="og:description" content="Homepage of local businesses in the Lagos Chamber of Commerce">
+  <meta property="og:image" content="https://princeive.github.io/wdd231/chamber/images/commerce.jpg">
+  <meta property="og:url" content="https://princeive.github.io/wdd231/chamber/index.html">
+  <meta property="og:locale" content="en_US">
+  <title>Lagos Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+  <link href="styles/small.css" rel="stylesheet">
+  <link href="styles/larger.css" rel="stylesheet">
+  <link href="styles/small-join.css" rel="stylesheet">
+  <link href="styles/large-join.css" rel="stylesheet">
+  <link rel="icon" href="/chamber/images/favicon.ico">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Lagos Chamber of Commerce Logo" width="220" height="60">
+    <button id="ham-btn" class="hamburger"><span></span></button>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main class="membership-container">
+    <section class="application-form">
+      <h2>Membership Application</h2>
+      <form method="get" action="thankyou.html">
+        <label>First Name:
+          <input type="text" name="firstName" required title="First Name" autocomplete="given-name">
+        </label>
+        <label>Last Name:
+          <input type="text" name="lastName" required title="Last Name" autocomplete="family-name">
+        </label>
+        <label>Organizational Title:
+          <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+        </label>
+        <label>Email:
+          <input type="email" name="email" required title="Email" autocomplete="email" placeholder="example@email.com">
+        </label>
+        <label>Mobile Number:
+          <input type="tel" name="phone" required title="Phone Number" autocomplete="tel">
+        </label>
+        <label>Organization Name:
+          <input type="text" name="organization" required title="Organization Name" autocomplete="organization">
+        </label>
+        <label>Membership Level:
+          <select name="membership" required>
+            <option value="">Select</option>
+            <option value="NP">NP Membership</option>
+            <option value="Bronze">Bronze</option>
+            <option value="Silver">Silver</option>
+            <option value="Gold">Gold</option>
+          </select>
+        </label>
+        <br>
+        <label>Description:
+          <textarea name="description" title="Business Description"></textarea>
+        </label>
+        <input type="hidden" name="timestamp" id="timestamp">
+        <input type="submit" value="Apply">
+      </form>
+    </section>
+
+   <section class="membership-levels">
+  <div class="card" data-title="NP Membership" data-content="No fee. Access to free networking events, newsletters.">
+    <h3>NP Membership</h3>
+    <a href="#" class="learn-more">Learn More</a>
+  </div>
+  <div class="card" data-title="Bronze" data-content="Includes NP + Basic Training Access + Event Discounts.">
+    <h3>Bronze</h3>
+    <a href="#" class="learn-more">Learn More</a>
+  </div>
+  <div class="card" data-title="Silver" data-content="Includes Bronze + Homepage Spotlight + Local Ads.">
+    <h3>Silver</h3>
+    <a href="#" class="learn-more">Learn More</a>
+  </div>
+  <div class="card" data-title="Gold" data-content="All benefits + Priority Access to Events + Exclusive Sponsorships.">
+    <h3>Gold</h3>
+    <a href="#" class="learn-more">Learn More</a>
+  </div>
+</section>
+
+<!-- Reusable Modal -->
+<dialog id="membership-modal" class="modal">
+  <button id="close-modal">❌</button>
+  <h3 id="modal-title"></h3>
+  <p id="modal-content"></p>
+</dialog>
+
+  <footer>
+    <div class="footer-contact">
+      <address>
+        Lagos Chamber of Commerce<br>
+        Plot 10, Alausa Business District, Ikeja, Lagos, Nigeria<br>
+        <a href="mailto:info@lagoschamber.ng">info@lagoschamber.ng</a><br>
+        <a href="tel:+2348021234567">+234 802 123 4567</a>
+      </address>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/prince-eriabie" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+      <a href="https://www.facebook.com/iveeriabie" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+      <a href="https://wa.me/2348163724130" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16" height="16"></a>
+    </div>
+    <div class="footer-credits">
+      <p>WDD231 Class Project</p>
+      <p>Prince Ive Eriabie, Lagos, Nigeria</p>
+      <p>&copy; <span id="current-year"></span> • Lagos Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
