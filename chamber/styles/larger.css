@@ -94,7 +94,7 @@
 
   h1 {
     margin: 0 auto;
-    max-width: 1200px;
+    font-size: larger;
   }
 
   /* Info Panels */
@@ -308,6 +308,75 @@ dialog {
   right: 10px;
   cursor: pointer;
 }
+
+.membership-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.application-form {
+  flex: 2 1 60%;
+}
+
+.membership-levels {
+  flex: 1 1 35%;
+}
+
+.application-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.application-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.application-form input[type="submit"] {
+  background-color: #004080;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.application-form input[type="submit"]:hover {
+  background-color: #FDB813;
+  color: #000;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .membership-container {
+    flex-direction: column;
+  }
+
+  .application-form,
+  .membership-levels {
+    width: 100%;
+  }
+}
+
+
 .membership-levels {
   display: grid;
   gap: 1rem;
