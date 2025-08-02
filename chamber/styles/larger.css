@@ -268,8 +268,6 @@
   /* Centered Modal Dialog */
 dialog {
   margin: auto;
-  border: 1px solid rgb(0 0 0 / 10%);
-  border-radius: .5rem;
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0 0 3rem #777;
@@ -463,4 +461,64 @@ dialog {
     background-color: #481aee;
   }
 
+    .cards {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+
+  .cards {
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8";
+  }
+
+   .card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+      .card h2,
+      .card address,
+      .card p,
+      .card button {
+        margin-bottom: 0.75rem;
+      }
+
+      .card figure {
+        margin: 0 0 1rem 0;
+      }
+
+      .card img {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        border-radius: 8px;
+      }
+
+
+}
+
+@media (min-width: 641px) {
+  .cards {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+@media (min-width: 1025px) {
+  .cards {
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+  }
+
+ 
 }

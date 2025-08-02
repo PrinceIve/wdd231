@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lagos Chamber of Commerce">
+    <meta name="author" content="Prince Ive Eriabie">
+    <meta property="og:title" content="Directory - Prince Ive Eriabie">
+    <meta property="og:description" content="Directory of local businesses in the Lagos Chamber of Commerce">
+    <meta property="og:image" content="https://princeive.github.io/wdd231/chamber/images/commerce.jpg">
+    <meta property="og:url" content="https://princeive.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <title>Lagos Chamber of Commerce</title>
+
+      <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="icon" href="/chamber/images/favicon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/grid.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    
+ <header>
+  <img src="images/logo.svg" alt="Lagos Chamber of Commerce Logo" width="220" height="60">
+  <button id="ham-btn" class="hamburger"><span></span></button>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="current"><a href="#">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+</header>
+
+    
+  <main>
+        <h1>Discover Exceptional Destinations to Visit in Lagos!!!</h1>
+   
+    <aside id="visit-message" class="sidebar"></aside>
+
+    <section class="cards" id="cards-container">
+    <!-- Cards will be populated by JavaScript -->
+    </section>
+
+    <dialog id="places-modal" class="modal">
+        <button id="close-modal">❌</button>
+        <h3 id="modal-title">Visitor Info</h3>
+        <p id="modal-content"></p>
+    </dialog>
+
+
+  </main>
+
+ <footer>
+  <div class="footer-contact">
+    <address>
+        Lagos Chamber of Commerce<br>
+        Plot 10, Alausa Business District, Ikeja, Lagos, Nigeria<br>
+        <a href="info@lagoschamber.ng">info@lagoschamber.ng</a><br>
+        <a href="tel:+2348021234567">+234 802 123 4567</a>
+</address>
+
+  </div>
+
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/prince-eriabie" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+    <a href="https://www.facebook.com/iveeriabie" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+    <a href="https://wa.me/2348163724130" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16" height="16"></a>
+  </div>
+
+  <div class="footer-credits">
+    <p>WDD231 Class Project</p>
+    <p>Prince Ive Eriabie, Lagos, Nigeria</p>
+    <p> &copy; <span id="current-year"></span> • Lagos Chamber of Commerce</p>
+    <p id="lastModified"></p>
+  </div>
+</footer>
+
+</body>
+</html>

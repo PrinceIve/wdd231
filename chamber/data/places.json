@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "name": "Nike Art Gallery",
+      "address": "Lekki Peninsula, Lagos",
+      "description": "One of the largest art galleries in West Africa showcasing contemporary and traditional Nigerian art.",
+      "image": "nike_art_gallery.webp"
+    },
+    {
+      "name": "Lekki Conservation Centre",
+      "address": "KM 19 Lekki-Epe Expressway, Lekki Peninsula II, Lagos",
+      "description": "Famous for its long canopy walk and natural scenery, this reserve offers a peaceful escape from city life.",
+      "image": "lekki_con.webp"
+    },
+    {
+      "name": "National Museum Lagos",
+      "address": "Onikan, Lagos Island",
+      "description": "A cultural museum displaying Nigerian history, artifacts, and ancient sculptures.",
+      "image": "national-museum.webp"
+    },
+    {
+      "name": "Terra Kulture",
+      "address": "1376 Tiamiyu Savage St, Victoria Island, Lagos",
+      "description": "A center for Nigerian art, theater, and food offering stage plays and exhibitions.",
+      "image": "terraculture.webp"
+    },
+    {
+      "name": "Tarkwa Bay Beach",
+      "address": "Accessible by boat from Marina or Victoria Island, Lagos",
+      "description": "A quiet, semi-private beach ideal for picnics, surfing, and relaxation.",
+      "image": "tarkwa_bay.webp"
+    },
+    {
+      "name": "Freedom Park",
+      "address": "Old Broad Street Prison, Lagos Island",
+      "description": "A peaceful park and cultural center built from a colonial-era prison site.",
+      "image": "freedom_park.webp"
+    },
+    {
+      "name": "Jhalobia Recreation Park & Gardens",
+      "address": "Along Murtala Muhammed Intl. Airport Road, Ikeja, Lagos",
+      "description": "A beautifully maintained garden for family outings, events, and photo shoots.",
+      "image": "jhalobia.webp"
+    },
+    {
+      "name": "Omenka Gallery",
+      "address": "24 Ikoyi Crescent, Ikoyi, Lagos",
+      "description": "A leading art gallery and contemporary art space showcasing Nigerian and African artists.",
+      "image": "omenka.webp"
+    }
+  ]
+}

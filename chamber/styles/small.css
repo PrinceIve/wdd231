@@ -386,6 +386,7 @@ dialog {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 #close-modal {
   background: none;
   border: none;
@@ -430,6 +431,25 @@ dialog {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+.cards {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1rem;
+}
+
+.card img:hover {
+  filter: brightness(90%);
+}
+
 
 /* === Footer === */
 footer {
@@ -486,3 +506,21 @@ footer {
   height: 20px;
   filter: brightness(0) invert(1);
 }
+
+button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
