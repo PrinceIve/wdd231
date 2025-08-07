@@ -1,0 +1,100 @@
+{
+  "menu": [
+    {
+      "name": "Caribbean Rice",
+      "description": "Fragrant spiced rice with coconut milk and herbs, passed down from someone dear.",
+      "price": "₦7,000",
+      "image": "images/carribean_rice.png"
+    },
+    {
+      "name": "Pancake with Chicken Filling",
+      "description": "Savory pancakes stuffed with spicy chicken — a nostalgic comfort food.",
+      "price": "₦6,000",
+      "image": "images/pancake4.PNG"
+    },
+    {
+      "name": "Naruto's Fishcake Ramen",
+      "description": "Anime-favorite ramen with seasoned broth, boiled egg, and Naruto fishcake.",
+      "price": "₦9,000",
+      "image": "images/naruto_fishcake_ramen.png"
+    },
+    {
+      "name": "Luffy's Meat Feast",
+      "description": "Grilled meat combo with Caribbean sauces, perfect for a pirate’s appetite!",
+      "price": "₦11,000",
+      "image": "images/luffy_meatstick.png"
+    },
+    {
+      "name": "Gohan's Rice & Beans",
+      "description": "Power-packed basmati rice with Caribbean black beans — hearty & anime-ready.",
+      "price": "₦7,000",
+      "image": "images/gohan_rice_and_beans.png"
+    },
+    {
+      "name": "Spicy Anime Shawarma",
+      "description": "Juicy chicken wrapped with anime spice blend and Nigerian hot sauce.",
+      "price": "₦5,000",
+      "image": "images/sharwama_anime.png"
+    },
+    {
+      "name": "Hinata's Sweet Curry",
+      "description": "Mild Japanese-style curry with vegetables — comforting and flavorful.",
+      "price": "₦8,000",
+      "image": "images/hinata_curry.png"
+    },
+    {
+      "name": "One Piece Plantain Skewers",
+      "description": "Fried sweet plantain and chicken skewers with anime-style dip.",
+      "price": "₦5,000",
+      "image": "images/one_peiece_plantain.png"
+    },
+    {
+      "name": "Eren's Spicy Noodle Fury",
+      "description": "Fiery stir-fried noodles with veggies and suya-spiced beef.",
+      "price": "₦9,000",
+      "image": "images/eren_spicy_noodle.png"
+    },
+    {
+      "name": "Anime Bento Delight",
+      "description": "Rice, katsu, slaw, and pancake roll — a meal box fusion.",
+      "price": "₦11,000",
+      "image": "images/bento.png"
+    },
+    {
+      "name": "Sakura Mango Smoothie",
+      "description": "Chilled tropical mango smoothie with a cherry blossom twist.",
+      "price": "₦4,000",
+      "image": "images/sakura.png"
+    },
+    {
+      "name": "Uzumaki Yam Chips",
+      "description": "Crispy yam fries served with pepper sauce and anime swirl.",
+      "price": "₦3,000",
+      "image": "images/uzumaki.png"
+    },
+    {
+      "name": "Afro Miso Soup",
+      "description": "Miso soup with scent leaves and crayfish — Nigerian fusion.",
+      "price": "₦4,000",
+      "image": "images/afro_miso.png"
+    },
+    {
+      "name": "Chopper's Coconut Chicken",
+      "description": "Grilled chicken with coconut cream and anime herbs.",
+      "price": "₦8,000",
+      "image": "images/chopper_coconut.png"
+    },
+    {
+      "name": "Zoro's Pepper Gizzard",
+      "description": "Spicy grilled gizzard with green pepper — anime meets Nigerian street food.",
+      "price": "₦5,000",
+      "image": "images/zoro_pepper_gizzard.png"
+    },
+    {
+      "name": "Nigerian Twist Noodles",
+      "description": "Ramen-style noodles with ugu, crayfish, and pepper mix.",
+      "price": "₦7,000",
+      "image": "images/twist_noodles.png"
+    }
+  ]
+}

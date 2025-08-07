@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="My Course Home Page" />
+  <meta name="author" content="Prince Ive Eriabie" />
+  <meta property="og:title" content="My Course Home Page - Prince Ive Eriabie">
+  <meta property="og:description" content="Explore my course home page, learn about my background in web development, and discover my projects and academic journey.">
+  <meta property="og:image" content="https://princeive.github.io/wdd231/images/prince.jpg">
+  <meta property="og:url" content="https://princeive.github.io/wdd231/index.html">
+  <meta property="og:locale" content="en_US">
+  <title>FoodKage Homepage</title>
+
+  <link href="styles/smal.css" rel="stylesheet" />
+  <link href="styles/large.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/modal.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/foodkage.svg" alt="FoodKage Logo" width="220" height="60">
+        <button id="ham-btn" class="hamburger"><span></span></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" id="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+
+        </nav>
+    </header>
+    
+    <main>
+      <section class="hero-banner">
+        <img src="images/hero_image.jpg" alt="Delicious anime-inspired food" class="hero-img">
+        <div class="hero-text">
+          <h1>Welcome to FoodKage</h1>
+          <p>"Taste the Power of Caribbean Flavors!"</p>
+         <a href="menu.html" class="menu-btn">View Menu</a>
+
+        </div>
+      </section>
+
+      <div class="home-grid">
+
+  <!-- FEATURED RICE SECTION -->
+  <section class="featured rice">
+  <h2>🍛 Caribbean Rice Bowls</h2>
+
+  <div class="menu-item">
+    <img src="images/carribbean_rice.webp" alt="Caribbean Rice" />
+    <div class="menu-text">
+      <h3>Caribbean Rice – ₦6,000</h3>
+      <p>
+        Dive into the soul of the islands with our classic Caribbean Rice—perfectly seasoned with a burst of herbs and spices, this dish brings warmth, culture, and flavor in every bite. It’s a bowl of sunshine for your taste buds!
+      </p>
+      <button class="order-btn">Add To Cart</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/carribean_rice.webp" alt="Spicy Caribbean Rice" />
+    <div class="menu-text">
+      <h3>Spicy Caribbean Rice – ₦7,000</h3>
+      <p>
+        Craving adventure? Our Spicy Caribbean Rice takes bold to the next level. Packed with heat, zest, and authentic island seasoning, it's the perfect choice for thrill-seeking food lovers.
+      </p>
+      <button class="order-btn">Add To Cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="featured pancakes">
+  <h2>🥞 Chicken-Filled Pancakes</h2>
+
+  <div class="menu-item">
+    <img src="images/pancakes1.webp" alt="Spicy Pancake" />
+    <div class="menu-text">
+      <h3>Spicy Pancake – ₦5,000</h3>
+      <p>
+        Not your average pancake—our Spicy Chicken-Filled Pancake is a flavor fusion bomb. Tender chicken, soft pancakes, and a spicy twist that’ll fire up your hunger ninja-style!
+      </p>
+      <button class="order-btn">Add To Cart</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/pancakes2.webp" alt="Sweet Pancake" />
+    <div class="menu-text">
+      <h3>Sweet Pancake – ₦5,000</h3>
+      <p>
+        A match made in heaven! Our Sweet Chicken-Filled Pancake combines savory goodness with a hint of sweetness in a fluffy pancake wrap. It’s comfort food, reimagined with an anime twist.
+      </p>
+      <button class="order-btn">Add To Cart</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ABOUT SECTION -->
+<section class="about">
+  <h2>About FoodKage</h2>
+  <p>
+    FoodKage was born from two deep passions: anime and cooking. Ever since I can remember, I’ve been fascinated by the vibrant world of anime — and equally enchanted by the art of crafting bold, flavorful dishes. Over time, I realized I didn’t have to choose between the two; I could fuse them into something special.
+  </p>
+  <p>
+    I honed my skills in the kitchen, driven by curiosity, creativity, and love. One of my most treasured recipes — Caribbean rice — was passed down by someone incredibly close to my heart. It carries with it warmth, memories, and a legacy I’m proud to share through every serving.
+  </p>
+  <p>
+    And then there are my signature pancakes — soft, golden, and stuffed with savory chicken fillings. No matter the crowd, these little pockets of joy never fail to spark delight.
+  </p>
+  <p>
+    At FoodKage, every dish is more than just food — it’s storytelling. It’s emotion. It’s culture and connection. Join me on this flavorful journey where anime meets Caribbean soul, and every bite is a tribute to the things I love most.
+  </p>
+</section>
+
+
+  <!-- ASIDES -->
+  <aside class="info anime">
+    <h3>👨‍🍳 Anime Mascot</h3>
+    <p>"Executive Hokage Chef"</p>
+  </aside>
+
+  <aside class="info specials">
+    <h3>📅 Daily Specials</h3>
+    <ul>
+      <li>Monday: Jollof Bowl</li>
+      <li>Wednesday: Mix & Match</li>
+      <li>Friday: Free Drink</li>
+    </ul>
+  </aside>
+
+  <aside class="info social">
+    <h3>📱 Social</h3>
+    <p>Follow us on TikTok & Instagram!</p>
+  </aside>
+
+  <aside class="info delivery">
+    <h3>🚚 Delivery Info</h3>
+    <p>Available in Festac, Igando, and Surulere.</p>
+  </aside>
+
+</div>
+
+  </main>
+
+  <footer>
+    <div class="contact">
+      <h3>Contact Info</h3>
+      <p>Email: order@foodkage.com</p>
+      <a href="tel:+2348163724130">+2348163724130</a>
+      <p>Address: 11 Mariam Balogun Street, Igando, Lagos</p>
+    </div>
+    
+    <div class="footer-social">
+        <a href="https://www.linkedin.com/in/prince-eriabie" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+        <a href="https://www.facebook.com/iveeriabie" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+        <a href="https://wa.me/2348163724130" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16" height="16"></a>
+    </div>
+
+    <div class="quick-links">
+      <h3>Quick Links</h3>
+      <p>Terms of Service</p>
+      <p>Privacy Policy</p>
+      <p>Allergen Guide</p>
+    </div>
+  </footer>
+
+  <dialog id="cart-modal" class="modal">
+  <button id="close-cart">❌</button>
+  <h3>Your Cart</h3>
+  <ul id="cart-list"></ul>
+  <button id="clear-cart">🗑️ Clear Cart</button>
+</dialog>
+
+  
+<!-- Reusable Modal -->
+<dialog id="membership-modal" class="modal">
+  <button id="close-modal">❌</button>
+  <h3 id="modal-title">Added to Cart</h3>
+  <p id="modal-content">Your delicious item has been added to the cart. Get ready to taste the power!</p>
+</dialog>
+
+</body>
+</html>

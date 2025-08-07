@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FoodKage Menu - Anime Inspired Caribbean Dishes" />
+  <meta name="author" content="Prince Ive Eriabie" />
+  <title>Menu - FoodKage</title>
+
+  <link href="styles/smal.css" rel="stylesheet" />
+  <link href="styles/large.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/modal.js" type="module" defer></script>
+  <script src="scripts/menu.js" type="module" defer></script>
+  
+</head>
+<body>
+  <header>
+    <img src="images/foodkage.svg" alt="FoodKage Logo" width="220" height="60">
+    <button id="ham-btn" class="hamburger"><span></span></button>
+
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="foodkage.html">Home</a></li>
+        <li class="current"><a href="#">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" id="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+    <main>
+
+          
+      <section class="hero-banner">
+        <img src="images/menu_hero.webp" alt="Delicious anime-inspired food" class="hero-img">
+        <div class="hero-text">
+          <h1>FoodKage Menu</h1>
+          <p>"Taste the Power of Caribbean Flavors!"</p>
+        </div>
+    </section>
+ 
+           <div id="menu-cards" class="menu-grid"></div>
+        </section>
+ 
+ 
+  </main>
+
+
+  <footer>
+    <div class="contact">
+      <h3>Contact Info</h3>
+      <p>Email: order@foodkage.com</p>
+      <a href="tel:+2348163724130">+2348163724130</a>
+      <p>Address: 11 Mariam Balogun Street, Igando, Lagos</p>
+    </div>
+    
+    <div class="footer-social">
+        <a href="https://www.linkedin.com/in/prince-eriabie" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+        <a href="https://www.facebook.com/iveeriabie" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+        <a href="https://wa.me/2348163724130" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16" height="16"></a>
+    </div>
+
+    <div class="quick-links">
+      <h3>Quick Links</h3>
+      <p>Terms of Service</p>
+      <p>Privacy Policy</p>
+      <p>Allergen Guide</p>
+    </div>
+  </footer>
+
+  <dialog id="cart-modal" class="modal">
+    <button id="close-cart">❌</button>
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <button id="clear-cart">🗑️ Clear Cart</button>
+  </dialog>
+
+  <dialog id="membership-modal" class="modal">
+    <button id="close-modal">❌</button>
+    <h3 id="modal-title">Added to Cart</h3>
+    <p id="modal-content">Your delicious item has been added to the cart. Get ready to taste the power!</p>
+  </dialog>
+</body>
+</html>
