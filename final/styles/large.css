@@ -200,24 +200,12 @@ header img {
   z-index: 1;
 }
 
-.order-btn:hover::before,
-.menu-btn:hover::before {
-  left: 130%;
-}
-
 /* Hover State */
 .order-btn:hover,
 .menu-btn:hover {
   background: linear-gradient(145deg, #e65100, #ffb74d);
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
-}
-
-/* Extra spacing */
-.order-btn,
-.menu-btn {
-  margin-top: 1rem;
-  align-self: flex-start;
 }
 
 
@@ -503,10 +491,7 @@ header img {
   color: var(--secondary-color);
   margin-bottom: 1rem;
   font-weight: 700;
-}
-
-.about-page h1,h2 {
-  font-size: 2.8rem;
+    font-size: 2.8rem;
   text-align: center;
    font-size: 2rem;
   margin-top: 2.5rem;
@@ -529,21 +514,6 @@ header img {
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
   font-family: 'Open Sans', sans-serif;
   color: var(--text-light);
-}
-
-.feedback-form h2 {
-  font-family: 'Poppins', sans-serif;
-  color: var(--secondary-color);
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-  text-align: center;
-}
-
-.feedback-form p {
-  font-size: 1rem;
-  margin-bottom: 1.75rem;
-  text-align: center;
-  color: #ccc;
 }
 
 /* Form Styling */
@@ -591,45 +561,5 @@ header img {
 .feedback-form textarea {
   min-height: 100px;
   font-family: inherit;
-}
-
-.feedback-form input[type="submit"] {
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text-light);
-  background: var(--secondary-color);
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  align-self: center;
-  box-shadow: 0 4px 12px rgba(245, 124, 0, 0.6);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.feedback-form input[type="submit"]::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  transform: skewX(-20deg);
-  transition: left 0.4s ease;
-  z-index: 1;
-}
-
-.feedback-form input[type="submit"]:hover::before {
-  left: 130%;
-}
-
-.feedback-form input[type="submit"]:hover {
-  background-color: var(--hover-color);
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 16px rgba(115, 25, 99, 0.8);
 }
 }
