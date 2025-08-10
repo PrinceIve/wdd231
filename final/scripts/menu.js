@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       card.innerHTML = `
         <img src="${item.image}" alt="${item.name}" loading="lazy">
         <div class="menu-text">
-          <h3>${item.name}: ${item.price}</h3>
+          <h3>${item.name} – ${item.price}</h3>
           <p>${item.description}</p>
           <button class="order-btn">Add to Cart</button>
         </div>
@@ -45,9 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
       menuContainer.appendChild(card);
     });
 
-    
+    // Attach the same click handler you used in modal.js
     document.querySelectorAll(".order-btn").forEach(btn => {
       btn.addEventListener("click", () => {
+        // grab the <h3> content for name+price
         const container = btn.closest(".menu-item");
         const heading = container.querySelector("h3").textContent;
         count++;
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
- 
+  // modal.js–style controls
   closeBtn.addEventListener("click", () => modal.close());
   modal.addEventListener("click", e => { if (e.target === modal) modal.close(); });
 
