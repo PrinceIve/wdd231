@@ -129,63 +129,30 @@ header img {
     margin-bottom: 1.5rem;
   }
 
-  .hero-text button {
-    padding: 0.75rem 1.75rem;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
-    border-radius: 6px;
-    border: none;
-    font-weight: 600;
-    margin: 0 0.5rem;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-  }
 
-  /* Unified Styling for All Buttons */
-.order-btn{
-  display: inline-block;
-  padding: 0.6rem 1.4rem;
+.button,
+.order-btn,
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
   font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  background: linear-gradient(145deg, #f57c00, #ff9800);
+  font-weight: 700;
+  border-radius: 999px;
   border: none;
-  border-radius: 999px; /* Fully rounded button */
   cursor: pointer;
-  white-space: nowrap;
-  width: auto;
-  max-width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   position: relative;
   overflow: hidden;
-}
-.menu-btn {
-  display: inline-block;
-  text-decoration: none;
-  background-color: var(--secondary-color);
-  color: var(--text-light);
-  padding: 1rem 1.5rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #ffffff;
-  border-radius: 999px; /* Fully rounded button */
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  color: var(--text-dark);
+  background: var(--secondary-color);
+  width: 100%;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  font-family: var(--font-primary);
 }
 
-.menu-btn:hover {
-  background-color: var(--hover-color);
-  transform: translateY(-2px) scale(1.02);
-}
-
-
-.menu-item .order-btn {
-  align-self: center;     
-  max-width: 160px;       
-  width: auto;            
-}
-
-/* Optional Shine Effect */
+.button::before,
 .order-btn::before,
 .menu-btn::before {
   content: '';
@@ -200,12 +167,23 @@ header img {
   z-index: 1;
 }
 
-/* Hover State */
+.button:hover,
 .order-btn:hover,
-.menu-btn:hover {
+.menu-btn:hover,
+.button:focus,
+.order-btn:focus,
+.menu-btn:focus {
   background: linear-gradient(145deg, #e65100, #ffb74d);
+  color: var(--text-dark);
+  outline: none;
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.button:hover::before,
+.order-btn:hover::before,
+.menu-btn:hover::before {
+  left: 125%;
 }
 
 
@@ -248,46 +226,41 @@ header img {
     margin-bottom: 1rem;
   }
 
-  .menu-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    background-color: var(--bg-dark);
-    color: #fff;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-  }
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
 
-  .menu-item img {
-    width: 200px;
-    border-radius: 8px;
-    flex-shrink: 0;
-  }
+.menu-item img {
+  width: 200px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
 
-  .menu-text {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
+.menu-item h3 {
+  font-family: var(--font-accent);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 
-  .menu-text h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .menu-text p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #ddd;
-    margin-bottom: 1rem;
-  }
-
+.menu-item p {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 1rem;
+  flex: 1;
+}
   /* Info */
   .info h3 {
     font-family: 'Poppins', sans-serif;
@@ -473,35 +446,34 @@ header img {
   }
 
   /* === About Page Styling === */
+
 .about-page {
   background-color: var(--primary-color);
   color: var(--text-light);
   padding: 2rem 3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-primary);
   max-width: 900px;
   margin: 50px auto 3rem auto;
   line-height: 1.6;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 
 .about-page h1,
 .about-page h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-accent);
   color: var(--secondary-color);
   margin-bottom: 1rem;
   font-weight: 700;
-    font-size: 2.8rem;
-  text-align: center;
-   font-size: 2rem;
+  font-size: 2rem;
   margin-top: 2.5rem;
 }
-
 
 .about-page p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  color: #ddd;
+  color: #ddd
 }
 
 /* === Feedback Form Section === */
@@ -561,5 +533,45 @@ header img {
 .feedback-form textarea {
   min-height: 100px;
   font-family: inherit;
+}
+
+.feedback-form input[type="submit"] {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-light);
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  align-self: center;
+  box-shadow: 0 4px 12px rgba(245, 124, 0, 0.6);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feedback-form input[type="submit"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: left 0.4s ease;
+  z-index: 1;
+}
+
+.feedback-form input[type="submit"]:hover::before {
+  left: 130%;
+}
+
+.feedback-form input[type="submit"]:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(115, 25, 99, 0.8);
 }
 }
