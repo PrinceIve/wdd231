@@ -1,0 +1,131 @@
+/* === Thank You Page Styles (append to large.css) === */
+
+/* Page wrapper */
+.thankyou-container {
+  max-width: 920px;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-light, #fff);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+header h1 {
+  margin: 0;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: var(--text-light, #fff);
+  background: linear-gradient(90deg, rgba(0,0,0,0.85), rgba(3,3,3,0.98));
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* Confirmation message card */
+.confirmation-message {
+  margin-top: 1.5rem;
+  padding: 1.75rem;
+  background-color: var(--bg-dark, #121212);
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.5);
+  color: var(--text-light, #fff);
+}
+
+/* Intro text */
+.confirmation-message h2 {
+  margin: 0 0 0.6rem 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--secondary-color, #f57c00);
+  font-size: 1.4rem;
+}
+
+.confirmation-message p {
+  margin: 0 0 1rem 0;
+  color: #d0d0d0;
+  line-height: 1.5;
+}
+
+/* Form data display (semantic DL layout) */
+.form-data-display {
+  margin-top: 1rem;
+}
+
+/* Use definition list for neat labels / values */
+.form-data-display dl.submitted-data {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 0.5rem 1.25rem;
+  align-items: start;
+  margin: 0;
+}
+
+.form-data-display dl.submitted-data dt {
+  font-weight: 700;
+  color: var(--secondary-color, #f57c00);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.98rem;
+}
+
+.form-data-display dl.submitted-data dd {
+  margin: 0;
+  color: #e6e6e6;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* Fallback when no DL is present (older markup using paragraphs) */
+.form-data-display p {
+  margin: 0.4rem 0;
+  color: #e0e0e0;
+}
+
+/* Links */
+.form-data-display a,
+.confirmation-message a {
+  color: var(--secondary-color, #f57c00);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-data-display a:hover,
+.confirmation-message a:hover {
+  color: var(--hover-color, #731963);
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+/* Small screens: stack labels above values for readability */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.9rem;
+    padding: 1.25rem;
+  }
+
+  .thankyou-container {
+    padding: 1rem;
+    margin: 1.25rem;
+  }
+
+  .form-data-display dl.submitted-data {
+    grid-template-columns: 1fr;
+  }
+
+  .form-data-display dl.submitted-data dt {
+    margin-top: 0.6rem;
+  }
+
+  .form-data-display dl.submitted-data dd {
+    padding-left: 0;
+  }
+}

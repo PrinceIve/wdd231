@@ -7,7 +7,7 @@
   <meta name="author" content="Prince Ive Eriabie" />
   <title>About - FoodKage</title>
 
-  <link href="styles/smal.css" rel="stylesheet" />
+  <link href="styles/small.css" rel="stylesheet" />
   <link href="styles/large.css" rel="stylesheet" />
   <link rel="icon" href="favicon.ico" />
   <script src="scripts/navigation.js" defer></script>
@@ -19,7 +19,7 @@
 
     <nav id="nav-bar" class="navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="foodkage.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li class="current"><a href="#">About</a></li>
         <li><a href="#" id="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a></li>
@@ -27,23 +27,62 @@
     </nav>
   </header>
 
-  <main>
-    <section class="about-page">
-      <h1>About FoodKage</h1>
-      <p>
-        FoodKage was born from two deep passions: anime and cooking. Ever since I can remember, I’ve been fascinated by the vibrant world of anime — and equally enchanted by the art of crafting bold, flavorful dishes.
-      </p>
-      <p>
-        I took the time to learn and master cooking, driven by love and creativity. One of the most treasured recipes I use — Caribbean rice — was passed down from someone very, very dear to my heart. It’s a soulful dish that carries emotion and legacy in every grain.
-      </p>
-      <p>
-        Then came my signature: pancakes with savory chicken fillings. No matter who I cook for, these never fail to bring a smile — they’re my personal promise of satisfaction.
-      </p>
-      <p>
-        FoodKage isn’t just a kitchen. It’s a fusion world where anime dreams meet Caribbean flavors. Every dish tells a story, shares a memory, and brings people together.
-      </p>
-    </section>
-  </main>
+<main>
+  <section class="about-page">
+    <h1>About FoodKage</h1>
+    <p>
+      FoodKage was born from two deep passions: anime and cooking. Ever since I can remember, I’ve been fascinated by the vibrant world of anime — and equally enchanted by the art of crafting bold, flavorful dishes.
+    </p>
+    <p>
+      I took the time to learn and master cooking, driven by love and creativity. One of the most treasured recipes I use — Caribbean rice — was passed down from someone very, very dear to my heart. It's a soulful dish that carries emotion and legacy in every grain.
+    </p>
+    <p>
+      Then came my signature: pancakes with savory chicken fillings. No matter who I cook for, these never fail to bring a smile — they're my personal promise of satisfaction.
+    </p>
+    <p>
+      FoodKage isn't just a kitchen. It's a fusion world where anime dreams meet Caribbean flavors. Every dish tells a story, shares a memory, and brings people together.
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>
+      At FoodKage, our mission is to create an unforgettable dining experience that celebrates creativity and culture. We strive to bring people together through food inspired by the imaginative worlds of anime, combined with the rich, comforting tastes of the Caribbean. We believe that food has the power to tell stories and build communities.
+    </p>
+
+    <h2>Why Anime and Caribbean Flavors?</h2>
+    <p>
+      Anime inspires us with its vibrant characters, unique worlds, and endless creativity. Caribbean cuisine speaks to the heart with bold spices, fresh ingredients, and soulful recipes passed through generations. Merging these two passions creates a one-of-a-kind experience where every bite sparks joy and wonder.
+    </p>
+
+    <h2>Community & Creativity</h2>
+    <p>
+      FoodKage is a community hub for anime lovers and food enthusiasts alike. We host tasting events, themed dinners, and encourage our customers to share their ideas for new dishes. Your voice matters here — helping shape the future menu with your unique tastes and inspirations.
+    </p>
+  </section>
+
+  <section class="feedback-form">
+    <h2>Share Your Ideas</h2>
+    <p>We’d love to hear from you! Please share your contact details and suggest any anime-inspired foods you'd like to see added to our menu.</p>
+    <form method="get" action="thankyou.html">
+      <label for="firstName">First Name:
+        <input type="text" id="firstName" name="firstName" required title="First Name" autocomplete="given-name" />
+      </label>
+      <label for="lastName">Last Name:
+        <input type="text" id="lastName" name="lastName" required title="Last Name" autocomplete="family-name" />
+      </label>
+      <label for="email">Email:
+        <input type="email" id="email" name="email" required title="Email" autocomplete="email" placeholder="example@email.com" />
+      </label>
+      <label for="phone">Mobile Number:
+        <input type="tel" id="phone" name="phone" required title="Phone Number" autocomplete="tel" />
+      </label>
+      <label for="animeFoodSuggestion">Anime-Inspired Food Suggestions:
+        <textarea id="animeFoodSuggestion" name="animeFoodSuggestion" required placeholder="Describe your idea for a new dish inspired by anime." rows="4"></textarea>
+      </label>
+      <input type="submit" value="Submit Suggestion" />
+    </form>
+  </section>
+</main>
+
 
   <footer>
     <div class="contact">
